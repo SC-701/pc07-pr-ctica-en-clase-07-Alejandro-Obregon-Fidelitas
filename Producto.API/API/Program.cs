@@ -21,6 +21,11 @@ builder.Services.AddHttpClient();
 
 builder.Services.AddScoped<IProductoFlujo, ProductoFlujo>();
 builder.Services.AddScoped<IProductoDA, ProductoDA>();
+builder.Services.AddScoped<ICategoriaFlujo, CategoriaFlujo>();
+builder.Services.AddScoped<ICategoriaDA, CategoriaDA>();
+builder.Services.AddScoped<ISubcategoriaFlujo, SubcategoriaFlujo>();
+builder.Services.AddScoped<ISubcategoriaDA, SubcategoriaDA>();
+
 builder.Services.AddScoped<IRepositorioDapper, RepositorioDapper>();
 builder.Services.AddScoped<IConfiguracion, Configuracion>();
 builder.Services.AddScoped<ITipoCambioServicio, TipoCambioServicio>();
